@@ -4,15 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Начало эстафеты!");
-        Runner runner = new Runner();
-        runner.setName("Runner ");
-        runner.start();
-        try {
-            runner.join();
-            System.out.println("Конец эстафеты!");
-        } catch (InterruptedException ie) {
+        for (int i = 1; i < 5; i++) {
+            Runner runner = new Runner("Runner ", i);
+            try {
+                runner.start();
+                runner.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
     }
 }
-
