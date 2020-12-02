@@ -13,7 +13,7 @@ public class Runner extends Thread {
                 System.out.println(getName() + (number - constanta) + " берет палочку");
             System.out.println(getName() + (number - constanta) + " бежит к " + getName() + (number - constanta - 1));
             try {
-                sleep(1000);
+                sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
@@ -25,7 +25,7 @@ public class Runner extends Thread {
             System.out.println(getName() + number + " берет палочку");
             System.out.println(getName() + number + " бежит к " + getName() + (number + 1));
             try {
-                sleep(1000);
+                sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
