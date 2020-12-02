@@ -27,25 +27,6 @@ public class Runner extends Thread {
             }
         }
         if (constanta == 2) {
-           /*if (this.number == 4) {
-                for (int i = this.number + 1; i > 0; i--) {
-                    if (i == 1) {
-                        System.out.println(this.getName() + i + " берет палочку");
-                        break;
-                    }
-                    if (i == 5) {
-                        System.out.println(this.getName() + i + " бежит к " + this.getName() + (i - 1));
-                    } else {
-                        System.out.println(this.getName() + i + " берет палочку");
-                        System.out.println(this.getName() + i + " бежит к " + this.getName() + (i - 1));
-                    }
-                    try {
-                        sleep(1000);
-                    } catch (InterruptedException r) {
-                        r.printStackTrace();
-                    }
-                }
-            }*/
             if (this.number != 5)
                 System.out.println(this.getName() + this.number + " берет палочку");
             System.out.println(this.getName() + this.number + " бежит к " + this.getName() + (this.number - 1));
